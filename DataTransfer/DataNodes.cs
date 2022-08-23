@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataTransfer
 {
-	internal class DataNodes:IDataObject
+	public class DataNodes:IDataObject
 	{
 		private List<IDataObject> dataObjects;
 
@@ -15,7 +15,7 @@ namespace DataTransfer
 			dataObjects = new List<IDataObject>();
 		}
 
-		public object getData()
+		public override object getData()
 		{
 			return dataObjects;
 		}

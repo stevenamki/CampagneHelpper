@@ -8,9 +8,8 @@ namespace DataTransfer
 {
 	internal class Node: IDataObject
 	{
-		String name;
 		Object data;
-		public object getData()
+		public override object getData()
 		{
 			return data;
 		}
@@ -18,16 +17,6 @@ namespace DataTransfer
 		public void setData(Object data)
 		{
 			this.data = data;
-		}
-
-		public object getName()
-		{
-			return name;
-		}
-
-		public void setName(string name)
-		{
-			this.name = name;
 		}
 
 	}

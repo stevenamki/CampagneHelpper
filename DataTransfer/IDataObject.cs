@@ -6,8 +6,28 @@ using System.Threading.Tasks;
 
 namespace DataTransfer
 {
-	public interface IDataObject
+	public abstract class IDataObject
 	{
-		public Object getData();
+        String name;
+        String Id;
+        public abstract Object getData();
+
+        public string getName(){
+            return name;
+        }
+        public String getId()
+        {
+            return Id;
+        }
+
+        public void setName(string name)
+        {
+            this.name = name;
+        }
+
+        public void setId(string id)
+        {
+            Id = id;
+        }
 	}
 }
