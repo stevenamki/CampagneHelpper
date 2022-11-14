@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32413.511
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{E1F2EAA3-04BA-4B23-8B65-1149655D84DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransfer", "DataTransfer\DataTransfer.csproj", "{771766F7-FA37-4102-A8DB-83DABD0C85A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTransfer", "DataTransfer\DataTransfer.csproj", "{771766F7-FA37-4102-A8DB-83DABD0C85A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestXml", "TestXml\TestXml.csproj", "{3D2F3A1D-EEAB-496C-9371-D86A20CF42E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestXml", "TestXml\TestXml.csproj", "{3D2F3A1D-EEAB-496C-9371-D86A20CF42E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleGameData", "RoleGameData\RoleGameData.csproj", "{8399F8B2-5435-4CFF-B253-F28AD946DC3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3D2F3A1D-EEAB-496C-9371-D86A20CF42E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D2F3A1D-EEAB-496C-9371-D86A20CF42E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D2F3A1D-EEAB-496C-9371-D86A20CF42E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8399F8B2-5435-4CFF-B253-F28AD946DC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8399F8B2-5435-4CFF-B253-F28AD946DC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8399F8B2-5435-4CFF-B253-F28AD946DC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8399F8B2-5435-4CFF-B253-F28AD946DC3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
