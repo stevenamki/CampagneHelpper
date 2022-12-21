@@ -9,7 +9,7 @@ namespace DataTransfer.Xml
 {
 	public class XmlManageur : IDataManageur
 	{
-		public IDataObject Load(string filePath)
+		public IObjectData Load(string filePath)
 		{
 			XmlDocument doc = new XmlDocument();
 			doc.Load(filePath);
@@ -18,7 +18,7 @@ namespace DataTransfer.Xml
 			
 		}
 
-		public void Save(IDataObject data,string filePath)
+		public void Save(IObjectData data,string filePath)
 		{
 			
 		}

@@ -11,7 +11,7 @@ namespace TestXml
 		public void TestMethod1()
 		{
 			XmlManageur xml = new XmlManageur();
-			IDataObject dataObject = xml.Load(@"C:\Users\Steven Labelle\source\repos\stevenamki\CampagneHelpper\test.xml");
+			IObjectData dataObject = xml.Load(@"F:\projet\d&d\CampagneHelpper\test.xml");
 			Assert.IsTrue(dataObject != null);
 		}
 
@@ -19,8 +19,8 @@ namespace TestXml
         public void TestMethod2()
         {
             XmlManageur xml = new XmlManageur();
-			DataNodes data = (DataNodes)xml.Load(@"C:\Users\Steven Labelle\source\repos\stevenamki\CampagneHelpper\test.xml");
-            xml.Save(data, @"C:\Users\Steven Labelle\source\repos\stevenamki\test\Test1.xml");
+			DataNodes data = (DataNodes)xml.Load(@"F:\projet\d&d\CampagneHelpper\test.xml");
+            xml.Save(data, @"F:\projet\d&d\CampagneHelpper\Test1.xml");
         }
     }
 }

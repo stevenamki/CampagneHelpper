@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataTransfer
 {
-	public class DataNodes:IDataObject
+	public class DataNodes:IObjectData
 	{
-		private List<IDataObject> dataObjects;
+		private List<IObjectData> dataObjects;
 
 		public DataNodes()
 		{
-			dataObjects = new List<IDataObject>();
+			dataObjects = new List<IObjectData>();
 		}
 
 		public override object getData()
@@ -20,7 +20,7 @@ namespace DataTransfer
 			return dataObjects;
 		}
 
-		public void addDataObject(IDataObject data)
+		public void addDataObject(IObjectData data)
 		{
 			dataObjects.Add(data);
 		}

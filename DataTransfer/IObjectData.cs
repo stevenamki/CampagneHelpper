@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DataTransfer
 {
-	public abstract class IDataObject
+	public abstract class IObjectData
 	{
         String name;
         String Id;
+        Dictionary<String, String> atttribute;
         public abstract Object getData();
 
         public string getName(){

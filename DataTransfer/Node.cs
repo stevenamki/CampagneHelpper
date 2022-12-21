@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataTransfer
 {
-	internal class Node: IDataObject
+	internal class Node: IObjectData
 	{
 		Object data;
 		public override object getData()
