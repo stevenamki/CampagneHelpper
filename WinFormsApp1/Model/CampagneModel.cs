@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RoleGameData
+namespace CampagneHelpperInterface.Model
 {
-    public class Place: CampagneElement
-    {
-
+	internal class CampagneModel
+	{
 	}
 }

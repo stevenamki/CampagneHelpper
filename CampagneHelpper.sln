@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{E1F2EAA3-04BA-4B23-8B65-1149655D84DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampagneHelpperInterface", "WinFormsApp1\CampagneHelpperInterface.csproj", "{E1F2EAA3-04BA-4B23-8B65-1149655D84DD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTransfer", "DataTransfer\DataTransfer.csproj", "{771766F7-FA37-4102-A8DB-83DABD0C85A4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestXml", "TestXml\TestXml.csproj", "{3D2F3A1D-EEAB-496C-9371-D86A20CF42E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoleGameData", "RoleGameData\RoleGameData.csproj", "{8399F8B2-5435-4CFF-B253-F28AD946DC3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoleGameData", "RoleGameData\RoleGameData.csproj", "{8399F8B2-5435-4CFF-B253-F28AD946DC3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

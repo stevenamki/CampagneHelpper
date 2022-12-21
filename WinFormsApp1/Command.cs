@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RoleGameData
+namespace CampagneHelpperInterface
 {
-    public class Place: CampagneElement
-    {
+	internal abstract class Command
+	{
+		bool statu;
+		public void Execute()
+		{
 
+		}
 	}
 }

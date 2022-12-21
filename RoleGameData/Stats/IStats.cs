@@ -8,11 +8,11 @@ namespace RoleGameData.Stats
 {
     public abstract class IStats
     {
-        Dictionary<string, object> _stats = new Dictionary<string, object>();
+        Dictionary<string, object> stats = new Dictionary<string, object>();
 
         public object getStats(string statsName)
         {
-           return _stats[statsName];
+           return stats[statsName];
         }
     }
 }
