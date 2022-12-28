@@ -20,7 +20,7 @@ namespace CampagneHelpperInterface.Backend
 
 		public Campagne loadCampagne(String filePath)
 		{
-			IObjectData campagne = xmlManageur.Load(filePath);
+			AbstarcObjectData campagne = xmlManageur.Load(filePath);
 		}
 
 	

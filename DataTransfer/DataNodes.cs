@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace DataTransfer
 {
-	public class DataNodes:IObjectData
+	public class DataNodes:AbstarcObjectData
 	{
-		private List<IObjectData> dataObjects;
+		private List<AbstarcObjectData> dataObjects;
 
 		public DataNodes()
 		{
-			dataObjects = new List<IObjectData>();
+			dataObjects = new List<AbstarcObjectData>();
 		}
 
-		public override object getData()
+		public override object GetData()
 		{
 			return dataObjects;
 		}
 
-		public void addDataObject(IObjectData data)
+		public void AddDataObject(AbstarcObjectData data)
 		{
 			dataObjects.Add(data);
 		}
 
-		public void removeDataObject(int index)
+		public void RemoveDataObject(int index)
 		{
 			dataObjects.RemoveAt(index);
 		}

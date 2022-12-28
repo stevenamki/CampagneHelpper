@@ -2,7 +2,7 @@
 {
 	public interface IDataManageur
 	{
-		public IObjectData Load(string filePath);
-		public void Save(IObjectData data, string filePath);
+		public AbstarcObjectData Load(string filePath);
+		public void Save(AbstarcObjectData data, string filePath);
 	}
 }

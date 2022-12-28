@@ -11,7 +11,7 @@ namespace TestXml
 		public void TestMethod1()
 		{
 			XmlManageur xml = new XmlManageur();
-			IObjectData dataObject = xml.Load(@"F:\projet\d&d\CampagneHelpper\test.xml");
+			AbstarcObjectData dataObject = xml.Load(@"F:\projet\d&d\CampagneHelpper\test.xml");
 			Assert.IsTrue(dataObject != null);
 		}
 

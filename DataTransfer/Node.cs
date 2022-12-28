@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace DataTransfer
 {
-	internal class Node: IObjectData
+	internal class Node: AbstarcObjectData
 	{
 		Object data;
-		public override object getData()
+		public override object GetData()
 		{
 			return data;
 		}
 
-		public void setData(Object data)
+		public void SetData(Object data)
 		{
 			this.data = data;
 		}
