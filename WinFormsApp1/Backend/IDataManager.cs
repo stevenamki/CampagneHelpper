@@ -9,6 +9,6 @@ namespace CampagneHelpperInterface.Backend
 {
 	internal interface IDataManager
 	{
-		public Campagne loadCampagne(string filePath);
+
 	}
 }

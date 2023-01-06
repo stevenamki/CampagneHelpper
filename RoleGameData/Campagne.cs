@@ -8,18 +8,24 @@ namespace RoleGameData
 {
     public class Campagne : CampagneElement
     {
-        private List<Campagne> campagnes;
         private List<Chapter> chapters;
-        private List<Person> persons;
+        private List<Person> character;
         private List<Object> objects;
         private List<Place> places;
+
+        public Campagne()
+		{
+            chapters = new List<Chapter>();
+            character = new List<Person>();
+            objects = new List<Object>();
+            places = new List<Place>();
+		}
 
 		public override Dictionary<string, object> getData()
 		{
 			 Dictionary<string,object> info =base.getData();
-            info.Add("campagnes",campagnes);
             info.Add("chapters", chapters);
-            info.Add("person", persons);
+            info.Add("person", character);
             info.Add("object", objects);
             info.Add("places", places);
             return info;
