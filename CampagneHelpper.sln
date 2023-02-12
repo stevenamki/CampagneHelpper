@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestXml", "TestXml\TestXml.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoleGameData", "RoleGameData\RoleGameData.csproj", "{8399F8B2-5435-4CFF-B253-F28AD946DC3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestInterface", "TestInterface\TestInterface.csproj", "{E9345CA6-D4F4-4115-A865-536BA912D399}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8399F8B2-5435-4CFF-B253-F28AD946DC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8399F8B2-5435-4CFF-B253-F28AD946DC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8399F8B2-5435-4CFF-B253-F28AD946DC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9345CA6-D4F4-4115-A865-536BA912D399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9345CA6-D4F4-4115-A865-536BA912D399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9345CA6-D4F4-4115-A865-536BA912D399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9345CA6-D4F4-4115-A865-536BA912D399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CampagneHelpperInterface.Frontend.Command
 {
-	internal class CreateNewCampagne : AbstracCommand
+	public class CreateNewCampagne : AbstracCommand
 	{
 		public override void Execute(object sender, EventArgs e)
 		{

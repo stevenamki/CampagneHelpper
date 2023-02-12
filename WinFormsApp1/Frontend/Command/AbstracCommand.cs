@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CampagneHelpperInterface.Frontend
 {
-	internal abstract class AbstracCommand
+	public abstract class AbstracCommand
 	{
 		private String state;
 		public abstract void Execute(Object sender,

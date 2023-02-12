@@ -9,45 +9,15 @@ using RoleGameData;
 namespace CampagneHelpperInterface.Model
 {
 	
-	public class CampagneModel:IObservable<Observeur>
+	public class CampagneModel:AbstractSubject
 	{
-		#region observeur
-		private class Unsubscriber : IDisposable
-		{
-			private List<IObserver<Observeur>> observers;
-			private IObserver<Observeur> observer;
-
-			public Unsubscriber(List<IObserver<Observeur>> observers, IObserver<Observeur> observer)
-			{
-				this.observers = observers;
-				this.observer = observer;
-			}
-
-			public void Dispose()
-			{
-				if (observer != null && observers.Contains(observer))
-					observers.Remove(observer);
-			}
-		}
-
 		private Campagne campagne;
-		private List<IObserver<Observeur>> observers;
 
-		public CampagneModel()
+		public void AddElement(CampagneElement campagneElement, Tuple<Type, string> path)
 		{
-			observers = new List<IObserver<Observeur>>();
+			
+				campagne.addNewElement(campagneElement,path);
+				notify();
 		}
-
-		public IDisposable Subscribe(IObserver<Observeur> observer)
-		{
-			if (!observers.Contains(observer))
-			{
-				observers.Add(observer);
-			}
-			return new Unsubscriber(observers,observer);
-		}
-		#endregion observeur
-
-
 	}
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CampagneHelpperInterface.Frontend.Command
 {
-	internal class Exit : AbstracCommand
+	public class Exit : AbstracCommand
 	{
 		public override void Execute(Object sender,
 						   EventArgs e)

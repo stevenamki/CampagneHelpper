@@ -30,8 +30,8 @@
 		{
 			this.tCElement = new System.Windows.Forms.TabControl();
 			this.tPChapter = new System.Windows.Forms.TabPage();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
+			this.BtnSupprimerChapter = new System.Windows.Forms.Button();
+			this.BtnNewChapter = new System.Windows.Forms.Button();
 			this.lsBChapter = new System.Windows.Forms.ListBox();
 			this.tPPlayerCharater = new System.Windows.Forms.TabPage();
 			this.button1 = new System.Windows.Forms.Button();
@@ -72,8 +72,8 @@
 			// 
 			// tPChapter
 			// 
-			this.tPChapter.Controls.Add(this.button3);
-			this.tPChapter.Controls.Add(this.button4);
+			this.tPChapter.Controls.Add(this.BtnSupprimerChapter);
+			this.tPChapter.Controls.Add(this.BtnNewChapter);
 			this.tPChapter.Controls.Add(this.lsBChapter);
 			this.tPChapter.Location = new System.Drawing.Point(4, 24);
 			this.tPChapter.Name = "tPChapter";
@@ -83,23 +83,23 @@
 			this.tPChapter.Text = "Chapter";
 			this.tPChapter.UseVisualStyleBackColor = true;
 			// 
-			// button3
+			// BtnSupprimerChapter
 			// 
-			this.button3.Location = new System.Drawing.Point(4, 325);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(75, 23);
-			this.button3.TabIndex = 5;
-			this.button3.Text = "Cancel";
-			this.button3.UseVisualStyleBackColor = true;
+			this.BtnSupprimerChapter.Location = new System.Drawing.Point(4, 325);
+			this.BtnSupprimerChapter.Name = "BtnSupprimerChapter";
+			this.BtnSupprimerChapter.Size = new System.Drawing.Size(75, 23);
+			this.BtnSupprimerChapter.TabIndex = 5;
+			this.BtnSupprimerChapter.Text = "Delete";
+			this.BtnSupprimerChapter.UseVisualStyleBackColor = true;
 			// 
-			// button4
+			// BtnNewChapter
 			// 
-			this.button4.Location = new System.Drawing.Point(85, 325);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(75, 23);
-			this.button4.TabIndex = 4;
-			this.button4.Text = "button1";
-			this.button4.UseVisualStyleBackColor = true;
+			this.BtnNewChapter.Location = new System.Drawing.Point(85, 325);
+			this.BtnNewChapter.Name = "BtnNewChapter";
+			this.BtnNewChapter.Size = new System.Drawing.Size(75, 23);
+			this.BtnNewChapter.TabIndex = 4;
+			this.BtnNewChapter.Text = "Create";
+			this.BtnNewChapter.UseVisualStyleBackColor = true;
 			// 
 			// lsBChapter
 			// 
@@ -315,8 +315,8 @@
 		private PictureBox pBCampagne;
 		private RichTextBox rtBDetail;
 		private RichTextBox rtbDescription;
-		private Button button3;
-		private Button button4;
+		private Button BtnSupprimerChapter;
+		private Button BtnNewChapter;
 		private Button button1;
 		private Button button2;
 		private Button button5;

@@ -9,9 +9,6 @@ namespace CampagneHelpperInterface
 	internal abstract class Command
 	{
 		bool statu;
-		public void Execute()
-		{
-
-		}
+		public abstract void Execute();
 	}
 }

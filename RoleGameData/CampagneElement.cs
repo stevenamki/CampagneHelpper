@@ -8,8 +8,8 @@ namespace RoleGameData
 {
 	public abstract class CampagneElement
 	{
-		 String name;
-		 String description;
+		String name;
+		String description;
 
 		//get set
 		public String getName() { return name; }
@@ -18,12 +18,16 @@ namespace RoleGameData
 		public void setDescription(String description) { this.description = description; }
 
 		//methode
-		public virtual Dictionary<string,object> getData()
+		public virtual Dictionary<string, object> getData()
 		{
-			Dictionary<string,object> info = new Dictionary<string,object>();
+			Dictionary<string, object> info = new Dictionary<string, object>();
 			info.Add("name", name);
 			info.Add("description", description);
 			return info;
 		}
+
+		public abstract void addNewElement(CampagneElement element, Tuple<Type,string>  infoPath);
+
+		public abstract void addChildNewElement(CampagneElement element, Tuple<Type, string> infoPath);
 	}
 }

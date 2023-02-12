@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CampagneHelpperInterface.Frontend.Command
 {
-	internal class LoadCampagne:AbstracCommand
+	public class LoadCampagne:AbstracCommand
 	{
 		private string filePath;
 
