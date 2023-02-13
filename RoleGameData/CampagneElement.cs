@@ -8,8 +8,8 @@ namespace RoleGameData
 {
 	public abstract class CampagneElement
 	{
-		String name;
-		String description;
+		protected String name;
+		protected String description;
 
 		//get set
 		public String getName() { return name; }

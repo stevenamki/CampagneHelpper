@@ -27,9 +27,10 @@ namespace CampagneHelpperInterface
 			InitializeComponent();
 			campagne.Subscribe(this);
 
-			CreateCampagneElement createCampagneElement = new CreateCampagneElement(typeof(Chapter),"Campagne");
+			CreateNewForm CreatorformChapter = new CreateNewForm(new AddChapter());
 
-			BtnNewChapter.Click += new EventHandler(createCampagneElement.Execute);
+			BtnNewChapter.Click += new EventHandler(CreatorformChapter.Execute);
+
 		}
 
 		public void notifyed(in AbstractSubject subject)

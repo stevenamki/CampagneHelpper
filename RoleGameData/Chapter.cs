@@ -11,6 +11,12 @@ namespace RoleGameData
         List<Chapter> chapters;
         List<Quest> quests;
 
+		public Chapter(string title,string description)
+		{
+			name = title;
+			description = description;
+		}
+
 		public override void addChildNewElement(CampagneElement element, Tuple<Type, string> infoPath)
 		{
 			throw new NotImplementedException();

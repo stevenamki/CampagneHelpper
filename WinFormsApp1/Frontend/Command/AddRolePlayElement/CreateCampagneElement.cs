@@ -5,10 +5,10 @@ namespace CampagneHelpperInterface.Frontend.Command
 {
 	public class CreateCampagneElement : AbstracCommand
 	{
-		private object[] args;
-		private CampagneModel campagne;
+		protected object[] args;
+		protected CampagneModel campagne;
 		Tuple<Type, string> infoElement;
-		private object element;
+		protected object element;
 
 		public CreateCampagneElement(Type type, string path)
 		{
