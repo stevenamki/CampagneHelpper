@@ -1,5 +1,6 @@
 ﻿using CampagneHelpperInterface.Frontend.Command;
 using CampagneHelpperInterface.Frontend.Command.AddRolePlayElement;
+using CampagneHelpperInterface.Model;
 using RoleGameData;
 using System;
 using System.Collections.Generic;
@@ -15,14 +16,18 @@ namespace CampagneHelpperInterface
 {
 	public partial class AddChapter : Form
 	{
-		public AddChapter()
+		private CampagneModel campagne;
+		public AddChapter(CampagneModel campagne)
 		{
-			InitializeComponent();
-			AddChapterElement createCampagneElement = new AddChapterElement(typeof(Chapter), "Campagne");
+            this.campagne = campagne;
+            InitializeComponent();
+			AddChapterElement createCampagneElement = new AddChapterElement(typeof(Chapter), "Campagne",campagne);
 			ExitForm exitForm = new ExitForm(this);
 
 			BtnCreate.Click += new EventHandler(createCampagneElement.Execute);
+			BtnCreate.Click += new EventHandler(exitForm.Execute);
 			BtnCancel.Click += new EventHandler(exitForm.Execute);
+			
 		}
 	}
 }

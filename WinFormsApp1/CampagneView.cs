@@ -27,7 +27,7 @@ namespace CampagneHelpperInterface
 			InitializeComponent();
 			campagne.Subscribe(this);
 
-			CreateNewForm CreatorformChapter = new CreateNewForm(new AddChapter());
+			CreateNewForm CreatorformChapter = new CreateNewForm(new AddChapter(campagne));
 
 			BtnNewChapter.Click += new EventHandler(CreatorformChapter.Execute);
 
@@ -35,7 +35,11 @@ namespace CampagneHelpperInterface
 
 		public void notifyed(in AbstractSubject subject)
 		{
-			throw new NotImplementedException();
+			CampagneModel model = (CampagneModel)subject;
+			List<string> chapterName = model.GetListChapterName();
+			chapterName.Sort();
+			lsBChapter.Items.Clear();
+			lsBChapter.Items.AddRange(chapterName.ToArray());
 		}
 	}
 }

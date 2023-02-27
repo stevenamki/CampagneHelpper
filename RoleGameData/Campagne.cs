@@ -8,57 +8,46 @@ namespace RoleGameData
 {
 	public class Campagne : CampagneElement
 	{
-		private List<Chapter> chapters;
-		private List<Person> character;
-		private List<Object> objects;
-		private List<Place> places;
+		private Dictionary<Type, List<CampagneElement>> campagneElement;
 
 		public Campagne()
 		{
-			chapters = new List<Chapter>();
-			character = new List<Person>();
-			objects = new List<Object>();
-			places = new List<Place>();
+			campagneElement = new Dictionary<Type, List<CampagneElement>>();
+			campagneElement.Add(typeof(Chapter), new List<CampagneElement>());
+			campagneElement.Add(typeof(Person), new List<CampagneElement>());
+			campagneElement.Add(typeof(Object), new List<CampagneElement>());
+			campagneElement.Add(typeof(Place), new List<CampagneElement>());
 		}
 
 		public override void addChildNewElement(CampagneElement element, Tuple<Type, String> infoPath)
 		{
-			if (infoPath.Item1 == typeof(Chapter))
-			{
-				chapters.Add((Chapter)element);
-			}
-			else if (infoPath.Item1 == typeof(Person))
-			{
-				character.Add((Person)element);
-			}
-			else if (infoPath.Item1 == typeof(Object))
-			{
-				objects.Add((Object)element);
-			}
-			else if (infoPath.Item1 == typeof(Place))
-			{
-				places.Add((Place)element);
-			}
-			else
+			List<CampagneElement> listToAdd = campagneElement.GetValueOrDefault(infoPath.Item1);
+			if (listToAdd == null)
 			{
 				addChildNewElement(element, infoPath);
 			}
-
+			else
+			{
+				listToAdd.Add(element);
+			}
 
 		}
 
 		public override void addNewElement(CampagneElement element, Tuple<Type, String> infoPath)
 		{
-			throw new NotImplementedException();
+			if (infoPath.Item2 == "Campagne")
+			{
+				addChildNewElement((CampagneElement)element, infoPath);
+			}
 		}
 
 		public override Dictionary<string, object> getData()
 		{
 			Dictionary<string, object> info = base.getData();
-			info.Add("chapters", chapters);
-			info.Add("person", character);
-			info.Add("object", objects);
-			info.Add("places", places);
+			info.Add("chapters", campagneElement.GetValueOrDefault(typeof(Chapter)));
+			info.Add("person", campagneElement.GetValueOrDefault(typeof(Person)));
+			info.Add("object", campagneElement.GetValueOrDefault(typeof(Object)));
+			info.Add("places", campagneElement.GetValueOrDefault(typeof(Place)));
 			return info;
 		}
 	}

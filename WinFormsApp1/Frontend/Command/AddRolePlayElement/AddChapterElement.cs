@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CampagneHelpperInterface.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace CampagneHelpperInterface.Frontend.Command.AddRolePlayElement
 {
 	public class AddChapterElement : CreateCampagneElement
 	{
-		public AddChapterElement(Type type, string path) : base(type, path)
+		public AddChapterElement(Type type, string path,CampagneModel campagne) : base(type, path, campagne)
 		{
 		}
 

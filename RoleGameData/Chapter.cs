@@ -14,7 +14,7 @@ namespace RoleGameData
 		public Chapter(string title,string description)
 		{
 			name = title;
-			description = description;
+			this.description = description;
 		}
 
 		public override void addChildNewElement(CampagneElement element, Tuple<Type, string> infoPath)
