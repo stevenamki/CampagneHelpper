@@ -8,5 +8,6 @@ namespace RoleGameData.Stats
 {
     public class StatsPlayerDndD : IStats
     {
+
     }
 }
