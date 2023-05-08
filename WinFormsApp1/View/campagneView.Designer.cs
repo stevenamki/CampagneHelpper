@@ -35,7 +35,7 @@
 			this.lsBChapter = new System.Windows.Forms.ListBox();
 			this.tPPlayerCharater = new System.Windows.Forms.TabPage();
 			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.btnCreateCharater = new System.Windows.Forms.Button();
 			this.lsBPlayerCharater = new System.Windows.Forms.ListBox();
 			this.tPPNPC = new System.Windows.Forms.TabPage();
 			this.button5 = new System.Windows.Forms.Button();
@@ -113,7 +113,7 @@
 			// tPPlayerCharater
 			// 
 			this.tPPlayerCharater.Controls.Add(this.button1);
-			this.tPPlayerCharater.Controls.Add(this.button2);
+			this.tPPlayerCharater.Controls.Add(this.btnCreateCharater);
 			this.tPPlayerCharater.Controls.Add(this.lsBPlayerCharater);
 			this.tPPlayerCharater.Location = new System.Drawing.Point(4, 24);
 			this.tPPlayerCharater.Name = "tPPlayerCharater";
@@ -132,14 +132,14 @@
 			this.button1.Text = "Cancel";
 			this.button1.UseVisualStyleBackColor = true;
 			// 
-			// button2
+			// btnCreateCharater
 			// 
-			this.button2.Location = new System.Drawing.Point(85, 325);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(75, 23);
-			this.button2.TabIndex = 4;
-			this.button2.Text = "button1";
-			this.button2.UseVisualStyleBackColor = true;
+			this.btnCreateCharater.Location = new System.Drawing.Point(85, 325);
+			this.btnCreateCharater.Name = "btnCreateCharater";
+			this.btnCreateCharater.Size = new System.Drawing.Size(75, 23);
+			this.btnCreateCharater.TabIndex = 4;
+			this.btnCreateCharater.Text = "Create";
+			this.btnCreateCharater.UseVisualStyleBackColor = true;
 			// 
 			// lsBPlayerCharater
 			// 
@@ -318,7 +318,7 @@
 		private Button BtnSupprimerChapter;
 		private Button BtnNewChapter;
 		private Button button1;
-		private Button button2;
+		private Button btnCreateCharater;
 		private Button button5;
 		private Button button6;
 		private Button button7;
